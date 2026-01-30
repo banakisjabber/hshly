@@ -9,37 +9,37 @@ import Image from "next/image"
 const earningsProof = [
   {
     id: 1,
-    image: "/images/image.png",
+    image: "/images/earnings-1.png",
     highlight: "$17,259.62",
     description: "Monthly earnings from a top-performing creator",
   },
   {
     id: 2,
-    image: "/images/image-20-283-29.png",
+    image: "/images/earnings-2.png",
     highlight: "$14,735.11",
     description: "Consistent monthly revenue with Hushly management",
   },
   {
     id: 3,
-    image: "/images/image-20-286-29.png",
+    image: "/images/earnings-3.png",
     highlight: "$12,045.14",
     description: "Growing creator achieving five-figure months",
   },
   {
     id: 4,
-    image: "/images/image-20-281-29.png",
+    image: "/images/earnings-4.png",
     highlight: "$9,622.17",
     description: "Steady earnings growth month over month",
   },
   {
     id: 5,
-    image: "/images/image-20-282-29.png",
+    image: "/images/earnings-5.png",
     highlight: "$7,839.52",
     description: "Creator earnings after strategic optimization",
   },
   {
     id: 6,
-    image: "/images/image-20-284-29.png",
+    image: "/images/earnings-6.png",
     highlight: "$6,859.22",
     description: "New creator building momentum with Hushly",
   },

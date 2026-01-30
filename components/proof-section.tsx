@@ -6,49 +6,42 @@ import { Card, CardContent } from "@/components/ui/card"
 import { TrendingUp, DollarSign, Users } from "lucide-react"
 import Image from "next/image"
 
-// Placeholder earnings data - replace images with actual screenshots
 const earningsProof = [
   {
     id: 1,
-    image: "/proof/earnings-1.jpg",
-    label: "Monthly Earnings",
-    highlight: "$47,892",
-    description: "Creator earnings after 3 months with Hushly",
+    image: "/images/earnings-1.png",
+    highlight: "$17,259.62",
+    description: "Monthly earnings from a top-performing creator",
   },
   {
     id: 2,
-    image: "/proof/earnings-2.jpg",
-    label: "Revenue Growth",
-    highlight: "312%",
-    description: "Average revenue increase for our creators",
+    image: "/images/earnings-2.png",
+    highlight: "$14,735.11",
+    description: "Consistent monthly revenue with Hushly management",
   },
   {
     id: 3,
-    image: "/proof/earnings-3.jpg",
-    label: "Subscriber Count",
-    highlight: "15.2K",
-    description: "Subscribers gained in first 60 days",
+    image: "/images/earnings-3.png",
+    highlight: "$12,045.14",
+    description: "Growing creator achieving five-figure months",
   },
   {
     id: 4,
-    image: "/proof/earnings-4.jpg",
-    label: "Tips & Messages",
-    highlight: "$12,450",
-    description: "Additional income from fan engagement",
+    image: "/images/earnings-4.png",
+    highlight: "$9,622.17",
+    description: "Steady earnings growth month over month",
   },
   {
     id: 5,
-    image: "/proof/earnings-5.jpg",
-    label: "Top Performer",
-    highlight: "$89,000+",
-    description: "Highest monthly earnings achieved",
+    image: "/images/earnings-5.png",
+    highlight: "$7,839.52",
+    description: "Creator earnings after strategic optimization",
   },
   {
     id: 6,
-    image: "/proof/earnings-6.jpg",
-    label: "Growth Rate",
-    highlight: "500%",
-    description: "Year-over-year earnings growth",
+    image: "/images/earnings-6.png",
+    highlight: "$6,859.22",
+    description: "New creator building momentum with Hushly",
   },
 ]
 
@@ -135,37 +128,23 @@ export function ProofSection() {
               <CardContent className="p-0">
                 {/* Screenshot Container */}
                 <div className="relative aspect-[4/3] bg-charcoal-light overflow-hidden">
-                  {/* Placeholder - Replace with actual screenshot */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-charcoal-light to-charcoal">
-                    <div className="text-center p-4">
-                      <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-rose/20 flex items-center justify-center">
-                        <DollarSign className="h-8 w-8 text-rose" />
-                      </div>
-                      <span className="font-serif text-2xl md:text-3xl font-bold text-white block">
-                        {proof.highlight}
-                      </span>
-                      <span className="text-xs text-white/50 mt-1 block">
-                        {proof.label}
-                      </span>
-                    </div>
-                  </div>
-                  
-                  {/* Uncomment and use when you have actual images:
                   <Image
                     src={proof.image || "/placeholder.svg"}
                     alt={proof.description}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  */}
                   
                   {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
                 
                 {/* Info */}
                 <div className="p-4">
-                  <p className="text-sm text-white/80 leading-relaxed">
+                  <span className="font-serif text-xl font-bold text-rose block mb-1">
+                    {proof.highlight}
+                  </span>
+                  <p className="text-sm text-white/70 leading-relaxed">
                     {proof.description}
                   </p>
                 </div>

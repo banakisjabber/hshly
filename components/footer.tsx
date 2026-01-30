@@ -6,7 +6,7 @@ import { Instagram, Mail, ArrowRight } from "lucide-react"
 const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#proof", label: "Results" },
   { href: "#faq", label: "FAQ" },
 ]
 
@@ -72,22 +72,22 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://instagram.com/hushlyagency"
+                  href="https://instagram.com/hushlyco"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-white/70 hover:text-rose transition-colors"
                 >
                   <Instagram className="h-5 w-5" />
-                  <span>@hushlyagency</span>
+                  <span>@hushlyco</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@hushly.com"
+                  href="mailto:apply@hushly.agency"
                   className="flex items-center gap-3 text-white/70 hover:text-rose transition-colors"
                 >
                   <Mail className="h-5 w-5" />
-                  <span>info@hushly.com</span>
+                  <span>apply@hushly.agency</span>
                 </a>
               </li>
             </ul>

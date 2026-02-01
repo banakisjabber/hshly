@@ -170,12 +170,8 @@ export function ApplyButton({
         data.priorAgency ? "Yes" : "No"
       )
       params.append(`entry.${entryContactMethod}`, contactMethodLabel)
-      params.append(
-        `entry.${entryPhone}`,
-        data.contactMethod === "phone" && data.phone
-          ? data.phone.trim()
-          : ""
-      )
+      params.append(`entry.${entryPhone}`, (data.phone || "").trim())
+
 
       // Submit to Google Form using no-cors mode
       // Since no-cors returns an opaque response, we can't check the status.

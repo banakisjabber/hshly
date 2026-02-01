@@ -170,7 +170,14 @@ export function ApplyButton({
         data.priorAgency ? "Yes" : "No"
       )
       params.append(`entry.${entryContactMethod}`, contactMethodLabel)
-      params.append(`entry.${entryPhone}`, (data.phone || "").trim())
+      // Build phone value so Google Forms always persists the field
+      const phoneValue =
+        data.phone?.trim()
+          ? normalizePhone(data.phone)
+          : `Not provided (${contactMethodLabel})`
+
+      params.append(`entry.${entryPhone}`, phoneValue)
+
 
 
       // Submit to Google Form using no-cors mode

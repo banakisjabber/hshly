@@ -12,7 +12,7 @@ const stats = [
   {
     icon: Users,
     value: "10M+",
-    label: "Fans Engaged",
+    label: "Followers Gained",
   },
   {
     icon: Award,
@@ -65,7 +65,7 @@ export function AboutSection() {
             About <span className="text-rose">Hushly</span>
           </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Hushly is your partner in OnlyFans success, specializing in tailored strategies for women creators. With years of industry expertise, we focus on what matters: growth, revenue, and empowerment.
+              Hushly is your partner in OnlyFans success, specializing in tailored strategies for creators. With years of industry expertise, we focus on what matters: growth, revenue, and empowerment.
             </p>
             <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
               We understand the unique challenges creators face and provide hands-on support to help you thrive in a competitive landscape.

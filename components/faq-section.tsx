@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "How do I apply?",
     answer:
-      "Click 'Apply Now' anywhere on our site—our team reviews applications within 24 hours and will reach out to discuss next steps.",
+      "Click 'Apply Now' anywhere on our site. Our team reviews applications within 24 hours and will reach out to discuss next steps.",
   },
   {
     question: "What's the cost?",
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Is it confidential?",
     answer:
-      "100%—your privacy is our top priority. We use secure communication channels and never share your information with third parties.",
+      "100% - Your privacy is our top priority. We use secure communication channels and never share your personal information.",
   },
   {
     question: "Do you handle all platforms?",
@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "Who is Hushly for?",
     answer:
-      "Ambitious women creators ready to scale their OnlyFans business. Whether you're just starting or looking to reach the top 1%, we're here to help.",
+      "Ambitious creators ready to scale their OnlyFans business. Whether you're just starting or looking to reach the top 1%, we're here to help.",
   },
 ]
 

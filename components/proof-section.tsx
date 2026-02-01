@@ -11,37 +11,37 @@ const earningsProof = [
     id: 1,
     image: "/images/earnings-1.png",
     highlight: "$17,259.62",
-    description: "Monthly earnings from a top-performing creator",
+    description: "",
   },
   {
     id: 2,
     image: "/images/earnings-2.png",
     highlight: "$14,735.11",
-    description: "Consistent monthly revenue with Hushly management",
+    description: "",
   },
   {
     id: 3,
     image: "/images/earnings-3.png",
     highlight: "$12,045.14",
-    description: "Growing creator achieving five-figure months",
+    description: "",
   },
   {
     id: 4,
     image: "/images/earnings-4.png",
     highlight: "$9,622.17",
-    description: "Steady earnings growth month over month",
+    description: "",
   },
   {
     id: 5,
     image: "/images/earnings-5.png",
     highlight: "$7,839.52",
-    description: "Creator earnings after strategic optimization",
+    description: "",
   },
   {
     id: 6,
     image: "/images/earnings-6.png",
     highlight: "$6,859.22",
-    description: "New creator building momentum with Hushly",
+    description: "",
   },
 ]
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react"
 import { Button } from "@/components/ui/button"
+import { ApplyButton } from "@/components/apply-button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
@@ -195,15 +196,12 @@ export function TestimonialsSection() {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <Button
-            asChild
+          <ApplyButton
             size="lg"
             className="bg-rose text-white font-bold hover:bg-rose-dark transition-all duration-300 hover:scale-105"
           >
-            <a href="https://hushly.apply/form" target="_blank" rel="noopener noreferrer">
-              Start Your Success Story
-            </a>
-          </Button>
+            Start Your Success Story
+          </ApplyButton>
         </div>
       </div>
     </section>

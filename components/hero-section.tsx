@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { ApplyButton } from "@/components/apply-button"
 import { ArrowRight } from "lucide-react"
 import { Sparkles } from "lucide-react"
 
@@ -58,21 +59,18 @@ export function HeroSection({ isVisible }: HeroSectionProps) {
 
           {/* Description */}
           <p className="mt-4 md:mt-6 text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto text-pretty leading-relaxed">
-            Hushly handles the hustle so you can focus on creating. From social media boosts to fan engagement strategies, we deliver results that scale your income sustainably.
+          Hushly takes care of the heavy lifting so you can focus on creating. From social media boosts to fan engagement strategies, we deliver results that scale your income sustainably.
           </p>
 
           {/* CTA Buttons */}
           <div className="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-            <Button
-              asChild
+            <ApplyButton
               size="lg"
               className="w-full sm:w-auto bg-rose text-white font-bold text-base md:text-lg px-6 md:px-8 py-5 md:py-6 hover:bg-rose-dark transition-all duration-300 hover:scale-105 shadow-2xl shadow-rose/30"
             >
-              <a href="https://hushly.apply/form" target="_blank" rel="noopener noreferrer">
-                Apply Now
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
+              Apply Now
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </ApplyButton>
             <Button
               asChild
               variant="outline"

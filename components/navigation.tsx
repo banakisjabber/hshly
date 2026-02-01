@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ApplyButton } from "@/components/apply-button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 const navLinks = [
@@ -81,14 +82,11 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button
-              asChild
+            <ApplyButton
               className="bg-rose text-white font-semibold hover:bg-rose-dark transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              <a href="https://hushly.apply/form" target="_blank" rel="noopener noreferrer">
-                Apply Now
-              </a>
-            </Button>
+              Apply Now
+            </ApplyButton>
           </div>
 
           {/* Mobile Menu */}
@@ -117,15 +115,12 @@ export function Navigation() {
                     </a>
                   ))}
                 </nav>
-                <Button
-                  asChild
+                <ApplyButton
                   size="default"
                   className="w-fit bg-rose text-white font-semibold hover:bg-rose-dark px-6"
                 >
-                  <a href="https://hushly.apply/form" target="_blank" rel="noopener noreferrer">
-                    Apply Now
-                  </a>
-                </Button>
+                  Apply Now
+                </ApplyButton>
               </div>
             </SheetContent>
           </Sheet>

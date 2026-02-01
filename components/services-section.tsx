@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   TrendingUp,
@@ -10,7 +9,6 @@ import {
   MessageCircle,
   Palette,
   Calendar,
-  ArrowRight,
 } from "lucide-react"
 
 const services = [
@@ -119,16 +117,6 @@ export function ServicesSection() {
                 <p className="text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
-                <Button
-                  asChild
-                  variant="link"
-                  className="mt-4 p-0 h-auto text-rose font-semibold hover:text-rose-dark"
-                >
-                  <a href="https://hushly.apply/form" target="_blank" rel="noopener noreferrer">
-                    Apply Now
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </a>
-                </Button>
               </CardContent>
             </Card>
           ))}

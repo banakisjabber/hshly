@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { ApplyButton } from "@/components/apply-button"
 import { Instagram, Mail, ArrowRight } from "lucide-react"
 
 const footerLinks = [
@@ -30,15 +31,12 @@ export function Footer() {
             <p className="mt-4 text-white/70 max-w-md leading-relaxed">
               Your premier partner in OnlyFans success. We empower ambitious creators to grow their audience, maximize earnings, and build lasting brands.
             </p>
-            <Button
-              asChild
+            <ApplyButton
               className="mt-6 bg-rose text-white font-semibold hover:bg-rose-dark transition-all duration-300"
             >
-              <a href="https://hushly.apply/form" target="_blank" rel="noopener noreferrer">
-                Apply Now
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+              Apply Now
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </ApplyButton>
           </div>
 
           {/* Quick Links */}
@@ -105,13 +103,13 @@ export function Footer() {
                 href="#"
                 className="text-white/50 text-sm hover:text-rose transition-colors"
               >
-                Privacy Policy
+                
               </a>
               <a
                 href="#"
                 className="text-white/50 text-sm hover:text-rose transition-colors"
               >
-                Terms of Service
+                
               </a>
             </div>
           </div>

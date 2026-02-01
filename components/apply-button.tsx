@@ -96,7 +96,14 @@ export function ApplyButton({
       modalOpenTimeRef.current = Date.now()
     }
   }, [isOpen])
-
+  const normalizePhone = (raw?: string) => {
+    if (!raw) return ""
+    const trimmed = raw.trim()
+    if (!trimmed) return ""
+    const hasPlus = trimmed.startsWith("+")
+    const digits = trimmed.replace(/[^\d]/g, "")
+    return hasPlus ? `+${digits}` : digits
+  }
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true)
     setError(null)

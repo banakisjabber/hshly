@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { TrendingUp, DollarSign, Users } from "lucide-react"
 import Image from "next/image"
+import { ApplyButton } from "@/components/apply-button"
 
 const earningsProof = [
   {
@@ -168,15 +169,13 @@ export function ProofSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <Button
-            asChild
-            size="lg"
-            className="bg-rose text-white font-bold hover:bg-rose-dark transition-all duration-300 hover:scale-105"
-          >
-            <a href="https://hushly.apply/form" target="_blank" rel="noopener noreferrer">
-              Start Earning More
-            </a>
-          </Button>
+          
+        <ApplyButton
+          size="lg"
+          className="bg-rose text-white font-bold hover:bg-rose-dark transition-all duration-300 hover:scale-105"
+        >
+          Start Earning More
+        </ApplyButton>
         </div>
       </div>
     </section>
